@@ -1,0 +1,1264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <!-- Ensure remote image requests are not blocked by referrer policy -->
+  <meta name="referrer" content="no-referrer">
+  
+  <title>MARS Structure Limited | Building Dreams, Creating Futures</title>
+  <meta name="description" content="Premier architectural and building development company in Bangladesh. Exclusive single-unit luxury residential projects in Jolshiri Abashon.">
+
+  <!-- Favicon -->
+  <link rel="shortcut icon" href="assets/images/mars-logo.jpg" type="image/x-icon">
+
+  <!-- Performance: High-Speed DNS Preconnect for Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <!-- Standardized Font Pairing: Playfair Display + Plus Jakarta Sans + Outfit -->
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@500;600;700&family=Playfair+Display:ital,wght@0,600..700;1,600&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Local Bootstrap 5 CSS (No CDN) -->
+  <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+
+  <!-- Local FontAwesome 6 Icons (No CDN) -->
+  <link rel="stylesheet" href="assets/css/fontawesome.min.css">
+
+  <!-- Local Leaflet Map CSS (No CDN) -->
+  <link rel="stylesheet" href="assets/css/leaflet.css">
+
+  <!-- Local AOS (Animate On Scroll) CSS (No CDN) -->
+  <link rel="stylesheet" href="assets/css/aos.css">
+
+  <!-- Custom Core Design System Stylesheet -->
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+  <!-- ========================================================================
+       1. Architectural Preloader (Extended 2.5s Duration & Content)
+       ======================================================================== -->
+  <div id="mars-preloader" aria-hidden="true">
+    <div class="preloader-content">
+      <!-- Animated MSL Architectural Emblem -->
+      <div class="preloader-logo-wrap">
+        <div class="preloader-emblem-ring"></div>
+        <div class="preloader-emblem-glow"></div>
+        <svg class="preloader-svg" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <!-- House Peak Roof (Maroon) -->
+          <path d="M15 50L50 20L85 50" stroke="#7B1824" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+          <!-- Chimney / Tower Pillar -->
+          <path d="M72 32V18H82V40" stroke="#7B1824" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+          <!-- Left Wall Pillar 'M' -->
+          <path d="M22 50V82M22 50L38 70L50 50" stroke="#7B1824" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+          <!-- Golden Ribbon 'S' Curve -->
+          <path d="M60 48C52 44 44 50 48 58C52 66 62 66 60 76C58 84 46 84 40 80" stroke="#E5A922" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+          <!-- Right Pillar 'L' in Gold -->
+          <path d="M74 46V82H86" stroke="#E5A922" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+      </div>
+
+      <h1 class="preloader-brand-title">MARS <span>STRUCTURE</span></h1>
+      <p class="preloader-brand-sub">Building Dreams • Creating Futures</p>
+
+      <!-- Golden Hairline Progress Track -->
+      <div class="preloader-progress-track">
+        <div id="preloader-progress-bar" class="preloader-progress-bar"></div>
+      </div>
+      <div id="preloader-counter" class="preloader-counter">0%</div>
+    </div>
+  </div>
+
+  <!-- ========================================================================
+       2. Topbar (Utility Contact Bar - Cleaned: Only Phone, Email, Socials)
+       ======================================================================== -->
+  <header class="mars-topbar">
+    <div class="container d-flex align-items-center justify-content-between">
+      <!-- Left: Direct Communication Channels (Clean gap, no dot before email) -->
+      <div class="topbar-left-area d-flex align-items-center gap-4">
+        <a href="tel:+8801844020600" class="topbar-contact-item">
+          <i class="fa-solid fa-phone-volume"></i>
+          <span>+880 1844 020600</span>
+        </a>
+        <a href="mailto:info@marsstructureltd.com" class="topbar-contact-item topbar-email-item">
+          <i class="fa-solid fa-envelope"></i>
+          <span>info@marsstructureltd.com</span>
+        </a>
+      </div>
+
+      <!-- Right: Social Media Connections -->
+      <div class="topbar-right-area">
+        <div class="topbar-social-links">
+          <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" class="topbar-social-icon" title="Facebook">
+            <i class="fa-brands fa-facebook-f"></i>
+          </a>
+          <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" class="topbar-social-icon" title="Instagram">
+            <i class="fa-brands fa-instagram"></i>
+          </a>
+          <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="topbar-social-icon" title="LinkedIn">
+            <i class="fa-brands fa-linkedin-in"></i>
+          </a>
+          <a href="https://youtube.com" target="_blank" rel="noopener noreferrer" class="topbar-social-icon" title="YouTube">
+            <i class="fa-brands fa-youtube"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- ========================================================================
+       3. Main Header (Sticky Navigation - Main nav on right side)
+       ======================================================================== -->
+  <nav class="mars-main-header">
+    <div class="container d-flex align-items-center justify-content-between">
+      
+      <!-- Brand Logo -->
+      <a href="index.html" class="mars-brand-logo-link" title="MARS Structure Limited">
+        <img src="assets/images/mars-logo.jpg" alt="MARS Structure Limited Logo" class="mars-brand-logo-img">
+      </a>
+
+      <!-- Main Navigation Links (Desktop - Placed on the Right Side) -->
+      <ul class="mars-nav-menu ms-auto d-none d-lg-flex">
+        <li class="mars-nav-item">
+          <a href="index.html" class="mars-nav-link active">Home</a>
+        </li>
+        <li class="mars-nav-item">
+          <a href="about.html" class="mars-nav-link">
+            About Us <i class="fa-solid fa-angle-down"></i>
+          </a>
+          <ul class="mars-dropdown-menu">
+            <li>
+              <a href="about.html">About MARS Structure</a>
+            </li>
+            <li>
+              <a href="#locations">Locations & Map</a>
+            </li>
+            <li>
+              <a href="#testimonials">Client Testimonials</a>
+            </li>
+          </ul>
+        </li>
+        <li class="mars-nav-item">
+          <a href="properties.html" class="mars-nav-link">
+            Properties <i class="fa-solid fa-angle-down"></i>
+          </a>
+          <ul class="mars-dropdown-menu">
+            <li>
+              <a href="properties.html" class="dropdown-filter-link">All Properties</a>
+            </li>
+            <li>
+              <a href="properties.html?filter=ongoing" class="dropdown-filter-link">Ongoing Construction <span class="drop-badge">Active</span></a>
+            </li>
+            <li>
+              <a href="properties.html?filter=upcoming" class="dropdown-filter-link">Upcoming Releases</a>
+            </li>
+            <li>
+              <a href="properties.html?filter=completed" class="dropdown-filter-link">Completed Landmarks</a>
+            </li>
+            <li>
+              <a href="property-details.html" class="dropdown-filter-link text-gold">Bayt-Al Noor Details</a>
+            </li>
+          </ul>
+        </li>
+        <li class="mars-nav-item">
+          <a href="#services" class="mars-nav-link">Solutions</a>
+        </li>
+        <li class="mars-nav-item">
+          <a href="contact.html" class="mars-nav-link">Contact</a>
+        </li>
+      </ul>
+
+      <!-- Mobile Hamburger Button -->
+      <button class="mars-hamburger-btn d-lg-none ms-auto" type="button" data-bs-toggle="offcanvas" data-bs-target="#marsMobileDrawer" aria-controls="marsMobileDrawer" aria-label="Toggle Navigation">
+        <i class="fa-solid fa-bars-staggered"></i>
+      </button>
+
+    </div>
+  </nav>
+
+  <!-- ========================================================================
+       4. Hero Viewport with RIO Property Scroll Architecture
+       ======================================================================== -->
+  <div class="mars-hero-track" id="heroTrack">
+    <section class="mars-hero-viewport" id="heroViewport">
+      <!-- Full Viewport Architectural Backdrop (Transparent Overlay: building is clearly visible!) -->
+      <div class="hero-backdrop-container">
+        <img src="assets/images/projects/hero-bg.jpg" alt="MARS Structure Luxury Architecture" class="hero-backdrop-img">
+        <!-- Transparent, luminous overlay so building architecture is bright & clearly visible! -->
+        <div class="hero-gradient-overlay"></div>
+        <div class="hero-radial-glow"></div>
+        <!-- Invisible Protective Shield: prevents user drag/save access to raw background image -->
+        <div class="hero-image-shield" oncontextmenu="return false;"></div>
+      </div>
+
+      <!-- Hero Viewport Content (Full Page Layout Same Row in Bootstrap Container) -->
+      <div class="hero-viewport-content">
+        <div class="container text-center d-flex flex-column align-items-center justify-content-center">
+          
+          <!-- Category Capsule Tag -->
+          <div class="hero-top-badge-wrap">
+            <div class="hero-capsule-tag">
+              <span class="hero-tag-dot"></span>
+              <span class="hero-tag-text">Premier Real Estate & Architectural Excellence • <span class="tag-highlight">Jolshiri</span></span>
+            </div>
+          </div>
+
+          <!-- RIO Property Style Split Headline Block -->
+          <div class="hero-split-headline-container">
+            <div class="hero-split-side hero-split-left" id="heroSplitLeft">
+              <h1 class="hero-massive-heading">BUILDING DREAMS,</h1>
+            </div>
+            <div class="hero-split-side hero-split-right" id="heroSplitRight">
+              <h1 class="hero-massive-heading text-gold">CREATING FUTURES.</h1>
+            </div>
+          </div>
+
+          <!-- Center Breathable Subtext & Actions (Responsive & Uncluttered) -->
+          <div class="hero-center-meta" id="heroCenterMeta">
+            <p class="hero-subtext-wide">
+              MARS Structure Limited delivers earthquake-resilient architectural living solutions across Bangladesh. Pioneering exclusive single-unit luxury residences in Jolshiri Smart City with 4-sided natural cross-ventilation and BUET-vetted structural precision.
+            </p>
+
+            <!-- Lucrative Button Group (Main Site Labels: Connect Us & Explore Properties) -->
+            <div class="hero-btn-group">
+              <a href="contact.html" class="mars-btn-primary">
+                <span>Connect Us</span>
+                <i class="fa-solid fa-arrow-right"></i>
+              </a>
+              <a href="properties.html" class="mars-btn-outline btn-outline-white">
+                <i class="fa-solid fa-building"></i>
+                <span>Explore Properties</span>
+              </a>
+            </div>
+          </div>
+
+          <!-- RIO Property Style Scroll Down Indicator -->
+          <a href="#about" class="hero-scroll-indicator" id="heroScrollIndicator" aria-label="Scroll down to explore">
+            <div class="scroll-mouse-pill">
+              <div class="scroll-mouse-wheel"></div>
+            </div>
+            <span class="scroll-indicator-text">Scroll to Explore</span>
+          </a>
+
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <!-- ========================================================================
+       5. Section 2: About MARS Structure / Brand Narrative
+          Curtain Reveal Effect: slides smoothly over the pinned hero
+       ======================================================================== -->
+  <section id="about" class="mars-about-section">
+    <div class="container">
+      <div class="row align-items-center gy-5">
+        
+        <!-- Left Image Collage -->
+        <div class="col-lg-6" data-aos="fade-right" data-aos-duration="850">
+          <div class="about-image-collage">
+            <img src="assets/images/projects/about-img7.png" alt="MARS Structure Construction" class="about-main-img">
+            <img src="assets/images/projects/about-img8.png" alt="Architectural Detail" class="about-accent-img">
+            <div class="about-badge-floating">
+              <div class="stat-num">7+</div>
+              <div class="stat-text">Satisfied<br>Communities</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right Content Narrative -->
+        <div class="col-lg-6" data-aos="fade-left" data-aos-duration="850">
+          <div class="ps-lg-4">
+            <span class="section-tag">About MARS Structure Limited</span>
+            <h2 class="section-heading-serif">Crafting Sustainable Skylines<br class="d-none d-md-block"> Across Bangladesh</h2>
+            
+            <p class="about-narrative-p">
+              <strong>MARS Structure Limited</strong> is a premier building development company committed to engineering excellence, structural resilience, and architectural elegance. We specialize in earthquake-resilient single-unit luxury residences in Jolshiri Smart City with BUET-vetted structural precision and seamless handover timelines.
+            </p>
+
+            <!-- Feature Checkpoints -->
+            <div class="about-feature-checks">
+              <div class="about-check-item" data-aos="fade-up" data-aos-delay="100">
+                <i class="fa-solid fa-circle-check"></i>
+                <span>Structural drawings vetted by BUET certified structural engineers</span>
+              </div>
+              <div class="about-check-item" data-aos="fade-up" data-aos-delay="200">
+                <i class="fa-solid fa-circle-check"></i>
+                <span>Single-unit per floor privacy with 4-sided cross-ventilation</span>
+              </div>
+              <div class="about-check-item" data-aos="fade-up" data-aos-delay="300">
+                <i class="fa-solid fa-circle-check"></i>
+                <span>Prime locations in Jolshiri Smart City with rapid expressway connectivity</span>
+              </div>
+            </div>
+
+            <a href="about.html" class="mars-btn-primary" data-aos="fade-up" data-aos-delay="350">
+              <span>Discover Our Story</span>
+              <i class="fa-solid fa-arrow-right"></i>
+            </a>
+
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================================
+       6. Section 3: Live Credibility & Metrics (Placed After About Section)
+       ======================================================================== -->
+  <section id="stats-section" class="mars-counter-section">
+    <div class="container">
+      
+      <!-- Section Header -->
+      <div class="text-center max-w-700 mx-auto mb-5" data-aos="fade-up" data-aos-duration="700">
+        <span class="section-tag justify-content-center">Numbers That Define Us</span>
+        <h2 class="section-heading-serif">Architectural Scale & Proven Credibility</h2>
+        <p class="text-muted">A tangible track record of precision structural delivery, masterplan square footage, and certified engineering rigor across Jolshiri Smart City.</p>
+      </div>
+
+      <div class="counter-strip-wrapper" data-aos="fade-up" data-aos-delay="150" data-aos-duration="800">
+        <div class="row g-0 align-items-center">
+          
+          <div class="col-6 col-lg-3 counter-item-col">
+            <div class="counter-modern-item">
+              <div class="counter-icon-pill">
+                <i class="fa-solid fa-building-circle-check"></i>
+              </div>
+              <div class="counter-num-box">
+                <span class="counter-number" data-target="25000" data-suffix="+">0</span>
+              </div>
+              <span class="counter-label">Built Architecture</span>
+              <span class="counter-sub-tag">25,000+ Sft. Delivered</span>
+            </div>
+          </div>
+
+          <div class="col-6 col-lg-3 counter-item-col">
+            <div class="counter-modern-item">
+              <div class="counter-icon-pill">
+                <i class="fa-solid fa-compass-drafting"></i>
+              </div>
+              <div class="counter-num-box">
+                <span class="counter-number" data-target="150000" data-suffix="+">0</span>
+              </div>
+              <span class="counter-label">Area In Pipeline</span>
+              <span class="counter-sub-tag">1,50,000+ Sft. Active</span>
+            </div>
+          </div>
+
+          <div class="col-6 col-lg-3 counter-item-col">
+            <div class="counter-modern-item">
+              <div class="counter-icon-pill">
+                <i class="fa-solid fa-map-location-dot"></i>
+              </div>
+              <div class="counter-num-box">
+                <span class="counter-number" data-target="18" data-suffix="+">0</span>
+              </div>
+              <span class="counter-label">Prime Landmarks</span>
+              <span class="counter-sub-tag">Jolshiri Smart City</span>
+            </div>
+          </div>
+
+          <div class="col-6 col-lg-3 counter-item-col">
+            <div class="counter-modern-item">
+              <div class="counter-icon-pill">
+                <i class="fa-solid fa-award"></i>
+              </div>
+              <div class="counter-num-box">
+                <span class="counter-number" data-target="100" data-suffix="%">0</span>
+              </div>
+              <span class="counter-label">Structural Vetting</span>
+              <span class="counter-sub-tag">100% BUET Certified</span>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================================
+       7. Section 4: Signature Projects Showcase (Separate Dedicated Section)
+       ======================================================================== -->
+  <section id="properties" class="mars-projects-section">
+    <div class="container">
+      
+      <!-- Section Header -->
+      <div class="text-center max-w-700 mx-auto mb-4" data-aos="fade-up" data-aos-duration="700">
+        <span class="section-tag justify-content-center">Portfolio of Excellence</span>
+        <h2 class="section-heading-serif">Featured Architectural Landmarks</h2>
+        <p class="text-muted">Explore our signature residential developments designed for sophisticated, timeless living.</p>
+      </div>
+
+      <!-- Filter Tabs: All, Ongoing, Upcoming, Completed -->
+      <div class="project-filter-bar" data-aos="fade-up" data-aos-delay="100">
+        <button type="button" class="project-filter-btn active" data-filter="all">All</button>
+        <button type="button" class="project-filter-btn" data-filter="ongoing">Ongoing</button>
+        <button type="button" class="project-filter-btn" data-filter="upcoming">Upcoming</button>
+        <button type="button" class="project-filter-btn" data-filter="completed">Completed</button>
+      </div>
+
+      <!-- Projects Slider Container with Side Navigation -->
+      <div class="projects-slider-container" data-aos="fade-up" data-aos-delay="150">
+        
+        <!-- Left & Right Arrow Navigation -->
+        <button type="button" class="projects-arrow-btn prev" id="projectsPrevBtn" aria-label="Previous Projects">
+          <i class="fa-solid fa-chevron-left"></i>
+        </button>
+
+        <!-- Slider Viewport -->
+        <div class="projects-slider-wrapper" id="projectsSliderWrapper">
+          <div class="projects-slider-track" id="projectsSliderTrack">
+            
+            <!-- ONGOING PROJECT 1: Bayt-Al Noor -->
+            <div class="project-slide-item ongoing">
+              <div class="project-showcase-box">
+                <div class="project-img-frame">
+                  <img src="assets/images/projects/bayt-al-noor.jpg" alt="Bayt-Al Noor Luxury Residence">
+                  <span class="project-status-tag status-ongoing">Ongoing</span>
+                </div>
+                <div class="project-info-body">
+                  <div>
+                    <h3 class="project-card-title">Bayt-Al Noor</h3>
+                    <div class="project-card-address">
+                      <i class="fa-solid fa-location-dot"></i>
+                      <span>Plot 004, Road 501, Sector 08, Jolshiri</span>
+                    </div>
+                    <p class="project-card-desc">Signature luxury residential project designed to blend modern architecture with timeless single-unit elegance.</p>
+                  </div>
+                  <div class="pt-2">
+                    <a href="property-details.html" class="mars-btn-primary w-100 justify-content-center">
+                      <span>View Project Details</span>
+                      <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- ONGOING PROJECT 2: Nur-Anu Oasis -->
+            <div class="project-slide-item ongoing">
+              <div class="project-showcase-box">
+                <div class="project-img-frame">
+                  <img src="assets/images/projects/nur-anu-oasis.jpg" alt="Nur-Anu Oasis Luxury Residence">
+                  <span class="project-status-tag status-ongoing">Ongoing</span>
+                </div>
+                <div class="project-info-body">
+                  <div>
+                    <h3 class="project-card-title">Nur-Anu Oasis</h3>
+                    <div class="project-card-address">
+                      <i class="fa-solid fa-location-dot"></i>
+                      <span>Plot 007, Road 409A, Sector 12, Jolshiri</span>
+                    </div>
+                    <p class="project-card-desc">Exclusive luxury residential project crafted with high-end architectural finishes and curated amenities.</p>
+                  </div>
+                  <div class="pt-2">
+                    <a href="property-details.html" class="mars-btn-primary w-100 justify-content-center">
+                      <span>View Project Details</span>
+                      <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- ONGOING PROJECT 3: Monowara -->
+            <div class="project-slide-item ongoing">
+              <div class="project-showcase-box">
+                <div class="project-img-frame">
+                  <img src="assets/images/projects/monowara.jpg" alt="Monowara Luxury Residence">
+                  <span class="project-status-tag status-ongoing">Ongoing</span>
+                </div>
+                <div class="project-info-body">
+                  <div>
+                    <h3 class="project-card-title">Monowara</h3>
+                    <div class="project-card-address">
+                      <i class="fa-solid fa-location-dot"></i>
+                      <span>Plot 001, Road 303, Sector 09, Jolshiri</span>
+                    </div>
+                    <p class="project-card-desc">Contemporary residential project combining modern architecture with balanced, functional family living.</p>
+                  </div>
+                  <div class="pt-2">
+                    <a href="property-details.html" class="mars-btn-primary w-100 justify-content-center">
+                      <span>View Project Details</span>
+                      <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- ONGOING PROJECT 4: MARS Zenith Tower -->
+            <div class="project-slide-item ongoing">
+              <div class="project-showcase-box">
+                <div class="project-img-frame">
+                  <img src="assets/images/projects/about-img7.png" alt="MARS Zenith Tower Residence">
+                  <span class="project-status-tag status-ongoing">Ongoing</span>
+                </div>
+                <div class="project-info-body">
+                  <div>
+                    <h3 class="project-card-title">MARS Zenith Tower</h3>
+                    <div class="project-card-address">
+                      <i class="fa-solid fa-location-dot"></i>
+                      <span>Plot 019, Road 401, Sector 10, Jolshiri</span>
+                    </div>
+                    <p class="project-card-desc">Exclusive corner-plot luxury suites boasting panoramic boulevard views and double-height entrance lobby.</p>
+                  </div>
+                  <div class="pt-2">
+                    <a href="property-details.html" class="mars-btn-primary w-100 justify-content-center">
+                      <span>View Project Details</span>
+                      <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- UPCOMING PROJECT 1: Shanti Nibash -->
+            <div class="project-slide-item upcoming">
+              <div class="project-showcase-box">
+                <div class="project-img-frame">
+                  <img src="assets/images/projects/shanti-nibash.jpg" alt="Shanti Nibash Luxury Residence">
+                  <span class="project-status-tag status-upcoming">Upcoming</span>
+                </div>
+                <div class="project-info-body">
+                  <div>
+                    <h3 class="project-card-title">Shanti Nibash</h3>
+                    <div class="project-card-address">
+                      <i class="fa-solid fa-location-dot"></i>
+                      <span>Plot 004, Road 502, Sector 13A, Jolshiri</span>
+                    </div>
+                    <p class="project-card-desc">Serene sanctuary residence offering maximum daylight, natural breeze, and calm community living.</p>
+                  </div>
+                  <div class="pt-2">
+                    <a href="property-details.html" class="mars-btn-primary w-100 justify-content-center">
+                      <span>View Project Details</span>
+                      <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- UPCOMING PROJECT 2: Bayat-Al Barakah -->
+            <div class="project-slide-item upcoming">
+              <div class="project-showcase-box">
+                <div class="project-img-frame">
+                  <img src="assets/images/projects/bayat-al-barakah.jpg" alt="Bayat-Al Barakah Luxury Residence">
+                  <span class="project-status-tag status-upcoming">Upcoming</span>
+                </div>
+                <div class="project-info-body">
+                  <div>
+                    <h3 class="project-card-title">Bayat-Al Barakah</h3>
+                    <div class="project-card-address">
+                      <i class="fa-solid fa-location-dot"></i>
+                      <span>Plot 026, Road 404, Sector 12, Jolshiri</span>
+                    </div>
+                    <p class="project-card-desc">Upcoming flagship development engineered for longevity, capital appreciation, and premier comfort.</p>
+                  </div>
+                  <div class="pt-2">
+                    <a href="property-details.html" class="mars-btn-primary w-100 justify-content-center">
+                      <span>View Project Details</span>
+                      <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- UPCOMING PROJECT 3: Jolshiri Royal Heights -->
+            <div class="project-slide-item upcoming">
+              <div class="project-showcase-box">
+                <div class="project-img-frame">
+                  <img src="assets/images/projects/about-img7.png" alt="Jolshiri Royal Heights Luxury Residence">
+                  <span class="project-status-tag status-upcoming">Upcoming</span>
+                </div>
+                <div class="project-info-body">
+                  <div>
+                    <h3 class="project-card-title">Jolshiri Royal Heights</h3>
+                    <div class="project-card-address">
+                      <i class="fa-solid fa-location-dot"></i>
+                      <span>Plot 015, Road 402, Sector 11, Jolshiri</span>
+                    </div>
+                    <p class="project-card-desc">Architectural masterpiece designed for ultra-luxury living with panoramic green boulevard views.</p>
+                  </div>
+                  <div class="pt-2">
+                    <a href="property-details.html" class="mars-btn-primary w-100 justify-content-center">
+                      <span>View Project Details</span>
+                      <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- UPCOMING PROJECT 4: MARS Lakeview Crown -->
+            <div class="project-slide-item upcoming">
+              <div class="project-showcase-box">
+                <div class="project-img-frame">
+                  <img src="assets/images/projects/about-img8.png" alt="MARS Lakeview Crown Residence">
+                  <span class="project-status-tag status-upcoming">Upcoming</span>
+                </div>
+                <div class="project-info-body">
+                  <div>
+                    <h3 class="project-card-title">MARS Lakeview Crown</h3>
+                    <div class="project-card-address">
+                      <i class="fa-solid fa-location-dot"></i>
+                      <span>Plot 011, Road 202, Sector 04, Jolshiri</span>
+                    </div>
+                    <p class="project-card-desc">Lakeside luxury single units engineered for biophilic ventilation, natural serenity, and rapid ROI.</p>
+                  </div>
+                  <div class="pt-2">
+                    <a href="property-details.html" class="mars-btn-primary w-100 justify-content-center">
+                      <span>View Project Details</span>
+                      <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- COMPLETED PROJECT 1: MARS Valley -->
+            <div class="project-slide-item completed">
+              <div class="project-showcase-box">
+                <div class="project-img-frame">
+                  <img src="assets/images/projects/about-img7.png" alt="MARS Valley Delivered Landmark">
+                  <span class="project-status-tag status-completed">Completed</span>
+                </div>
+                <div class="project-info-body">
+                  <div>
+                    <h3 class="project-card-title">MARS Valley</h3>
+                    <div class="project-card-address">
+                      <i class="fa-solid fa-location-dot"></i>
+                      <span>Plot 008, Road 201, Sector 03, Jolshiri</span>
+                    </div>
+                    <p class="project-card-desc">Successfully handed over luxury residential landmark featuring BUET-certified structural longevity.</p>
+                  </div>
+                  <div class="pt-2">
+                    <a href="property-details.html" class="mars-btn-primary w-100 justify-content-center">
+                      <span>View Project Details</span>
+                      <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- COMPLETED PROJECT 2: MARS Heritage -->
+            <div class="project-slide-item completed">
+              <div class="project-showcase-box">
+                <div class="project-img-frame">
+                  <img src="assets/images/projects/about-img8.png" alt="MARS Heritage Delivered Landmark">
+                  <span class="project-status-tag status-completed">Completed</span>
+                </div>
+                <div class="project-info-body">
+                  <div>
+                    <h3 class="project-card-title">MARS Heritage</h3>
+                    <div class="project-card-address">
+                      <i class="fa-solid fa-location-dot"></i>
+                      <span>Plot 012, Road 302, Sector 07, Jolshiri</span>
+                    </div>
+                    <p class="project-card-desc">Delivered landmark residential tower celebrated for timeless exterior design and premium community living.</p>
+                  </div>
+                  <div class="pt-2">
+                    <a href="property-details.html" class="mars-btn-primary w-100 justify-content-center">
+                      <span>View Project Details</span>
+                      <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- COMPLETED PROJECT 3: MARS Residency -->
+            <div class="project-slide-item completed">
+              <div class="project-showcase-box">
+                <div class="project-img-frame">
+                  <img src="assets/images/projects/hero-bg.jpg" alt="MARS Residency Delivered Landmark">
+                  <span class="project-status-tag status-completed">Completed</span>
+                </div>
+                <div class="project-info-body">
+                  <div>
+                    <h3 class="project-card-title">MARS Residency</h3>
+                    <div class="project-card-address">
+                      <i class="fa-solid fa-location-dot"></i>
+                      <span>Plot 005, Road 409, Sector 11, Jolshiri</span>
+                    </div>
+                    <p class="project-card-desc">Flagship delivered property showcasing modern architectural aesthetics and earthquake-safe engineering.</p>
+                  </div>
+                  <div class="pt-2">
+                    <a href="property-details.html" class="mars-btn-primary w-100 justify-content-center">
+                      <span>View Project Details</span>
+                      <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- COMPLETED PROJECT 4: MARS Pavilion -->
+            <div class="project-slide-item completed">
+              <div class="project-showcase-box">
+                <div class="project-img-frame">
+                  <img src="assets/images/projects/bayt-al-noor.jpg" alt="MARS Pavilion Delivered Landmark">
+                  <span class="project-status-tag status-completed">Completed</span>
+                </div>
+                <div class="project-info-body">
+                  <div>
+                    <h3 class="project-card-title">MARS Pavilion</h3>
+                    <div class="project-card-address">
+                      <i class="fa-solid fa-location-dot"></i>
+                      <span>Plot 003, Road 101, Sector 02, Jolshiri</span>
+                    </div>
+                    <p class="project-card-desc">Successfully handed over single-unit landmark celebrated for superior finishings and resident satisfaction.</p>
+                  </div>
+                  <div class="pt-2">
+                    <a href="property-details.html" class="mars-btn-primary w-100 justify-content-center">
+                      <span>View Project Details</span>
+                      <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <button type="button" class="projects-arrow-btn next" id="projectsNextBtn" aria-label="Next Projects">
+          <i class="fa-solid fa-chevron-right"></i>
+        </button>
+
+      </div>
+
+      <!-- Slider Pagination Dots -->
+      <div class="projects-slider-dots" id="projectsSliderDots"></div>
+
+      <!-- Transparent Browse All Projects Button -->
+      <div class="project-browse-all-wrap text-center mt-4" data-aos="fade-up" data-aos-delay="150">
+        <a href="properties.html" class="browse-all-projects-btn">
+          <span>Browse All Projects</span>
+          <i class="fa-solid fa-arrow-right"></i>
+        </a>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ========================================================================
+       8. Section 5: Value Pillars / Comprehensive Real Estate Solutions
+       ======================================================================== -->
+  <section id="services" class="mars-services-section">
+    <div class="container">
+      
+      <div class="text-center mb-5" data-aos="fade-up" data-aos-duration="700">
+        <span class="section-tag justify-content-center">Core Pillars of Excellence</span>
+        <h2 class="section-heading-serif">Comprehensive Real Estate Solutions</h2>
+        <p class="text-muted">Built upon four unwavering principles of quality, transparency, and architectural innovation.</p>
+      </div>
+
+      <div class="row g-4">
+        
+        <!-- Pillar 1: Attractive Design -->
+        <div class="col-md-6" data-aos="fade-up" data-aos-delay="100">
+          <div class="service-card-modern">
+            <div class="service-card-icon">
+              <i class="fa-solid fa-compass-drafting"></i>
+            </div>
+            <div class="service-card-info">
+              <h4>Attractive & Timeless Design</h4>
+              <p>Modern exterior facades and expansive interior layouts that maximize natural sunlight, cross-ventilation, and single-unit exclusivity.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Pillar 2: Eco-Friendly -->
+        <div class="col-md-6" data-aos="fade-up" data-aos-delay="200">
+          <div class="service-card-modern">
+            <div class="service-card-icon">
+              <i class="fa-solid fa-leaf"></i>
+            </div>
+            <div class="service-card-info">
+              <h4>Eco-Friendly & Sustainable</h4>
+              <p>Sustainable building materials, biophilic balconies, energy-efficient fixtures, and rooftop solar-ready open spaces.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Pillar 3: Secure Investment -->
+        <div class="col-md-6" data-aos="fade-up" data-aos-delay="300">
+          <div class="service-card-modern">
+            <div class="service-card-icon">
+              <i class="fa-solid fa-shield-halved"></i>
+            </div>
+            <div class="service-card-info">
+              <h4>Secure Your Investment</h4>
+              <p>Complete land titling verification, RAJUK compliance, BUET vetted structural safety, and high capital growth in Jolshiri.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Pillar 4: Prime Location -->
+        <div class="col-md-6" data-aos="fade-up" data-aos-delay="400">
+          <div class="service-card-modern">
+            <div class="service-card-icon">
+              <i class="fa-solid fa-map-location-dot"></i>
+            </div>
+            <div class="service-card-info">
+              <h4>Prime Strategic Locations</h4>
+              <p>Carefully selected plots in Jolshiri Abashon near central parks, wide arterial avenues, and direct expressway links to Dhaka.</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ========================================================================
+       9. Section 5: Strategic Presence & Full-Width Interactive Map (White Canvas)
+       ======================================================================== -->
+  <section id="locations" class="mars-location-section">
+    <div class="container text-center mb-4" data-aos="fade-up" data-aos-duration="700">
+      <span class="section-tag justify-content-center">Strategic Presence & Masterplan</span>
+      <h2 class="section-heading-serif">Jolshiri Smart City Stronghold</h2>
+      <p class="text-muted max-w-700 mx-auto">Explore all MARS Structure landmark properties on our full-width interactive masterplan map. Each development is strategically situated with direct 10-minute access to Dhaka via the 300ft Purbachal Expressway.</p>
+      
+      <!-- Interactive Property Type Filter Bar (Scalable Status Architecture) -->
+      <div class="map-property-selector-strip mt-4" data-aos="fade-up" data-aos-delay="100">
+        <button type="button" class="map-selector-pill active" data-map-filter="all">
+          <i class="fa-solid fa-layer-group me-1"></i> All
+        </button>
+        <button type="button" class="map-selector-pill" data-map-filter="completed">
+          <span class="pill-dot green"></span> Completed
+        </button>
+        <button type="button" class="map-selector-pill" data-map-filter="ongoing">
+          <span class="pill-dot gold"></span> Ongoing
+        </button>
+        <button type="button" class="map-selector-pill" data-map-filter="upcoming">
+          <span class="pill-dot yellow"></span> Upcoming
+        </button>
+      </div>
+    </div>
+
+    <!-- Full-Width Interactive Map Container (Edge-to-Edge) -->
+    <div class="fullwidth-map-container" data-aos="fade-up" data-aos-delay="150">
+      <div id="fullWidthPropertyMap" class="fullwidth-property-map"></div>
+
+      <!-- Map View Mode Switcher (Street View vs Satellite View) -->
+      <div class="map-view-switcher">
+        <button type="button" class="map-view-btn active" data-map-layer="street" title="Architectural Street View">
+          <i class="fa-solid fa-map"></i>
+          <span>Street View</span>
+        </button>
+        <button type="button" class="map-view-btn" data-map-layer="satellite" title="High-Res Aerial Satellite View">
+          <i class="fa-solid fa-satellite"></i>
+          <span>Satellite View</span>
+        </button>
+      </div>
+      
+      <!-- Floating Map Legend -->
+      <div class="map-floating-legend">
+        <div class="d-flex flex-wrap align-items-center justify-content-between gap-3">
+          <div class="d-flex align-items-center gap-3">
+            <span class="legend-badge"><span class="legend-dot green"></span> Completed</span>
+            <span class="legend-badge"><span class="legend-dot gold"></span> Ongoing Construction</span>
+            <span class="legend-badge"><span class="legend-dot yellow"></span> Upcoming Releases</span>
+            <span class="legend-badge"><span class="legend-dot dark"></span> Corporate Office</span>
+          </div>
+          <div class="map-highway-tag">
+            <i class="fa-solid fa-car-side text-gold me-2"></i>
+            <span><strong>10 Mins</strong> to Kuril Flyover via 300ft Expressway</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================================
+       10. Section 6: Client Testimonials & Voice of Trust (Light Gray Theme)
+       ======================================================================== -->
+  <section id="testimonials" class="mars-testimonials-section">
+    <div class="container">
+      
+      <div class="text-center max-w-700 mx-auto mb-5" data-aos="fade-up" data-aos-duration="700">
+        <span class="section-tag justify-content-center">Voice of Trust</span>
+        <h2 class="section-heading-serif">What Our Clients & Partners Say</h2>
+        <p class="text-muted">Authentic reflections from distinguished homeowners and joint-venture land partners across Jolshiri Smart City.</p>
+      </div>
+
+      <!-- Testimonial Single-Item Slider -->
+      <div class="testimonial-slider-container" data-aos="fade-up" data-aos-delay="150">
+        
+        <!-- Left Arrow Navigation (Middle Left Outside of 12 Columns) -->
+        <button type="button" class="testimonial-arrow-btn prev" id="testimonialPrevBtn" aria-label="Previous Testimonial">
+          <i class="fa-solid fa-chevron-left"></i>
+        </button>
+
+        <!-- Slider Viewport (Shows Exactly 1 Testimonial At A Time) -->
+        <div class="testimonial-slider-viewport" id="testimonialViewport">
+          <div class="testimonial-slider-track" id="testimonialSliderTrack">
+            
+            <!-- Slide 1 -->
+            <div class="testimonial-slide-item">
+              <div class="testimonial-single-card">
+                <div class="testimonial-card-badge">
+                  <i class="fa-solid fa-quote-left"></i>
+                </div>
+                <div class="testimonial-rating">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                </div>
+                <blockquote class="testimonial-quote-text">
+                  “The single-unit per floor concept gives absolute privacy with 4-sided natural cross-ventilation. What truly gave my family peace of mind is knowing our building’s structural drawings were fully vetted by BUET engineering professors.”
+                </blockquote>
+                <div class="testimonial-author-row">
+                  <div class="author-avatar-initials">TI</div>
+                  <div class="author-info">
+                    <h4 class="author-name">Dr. Tariqul Islam</h4>
+                    <span class="author-role">Resident Owner • Bayt-Al Noor (Sector 08)</span>
+                  </div>
+                  <div class="author-verified-tag ms-auto d-none d-sm-inline-flex">
+                    <i class="fa-solid fa-circle-check"></i>
+                    <span>Verified Owner</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Slide 2 -->
+            <div class="testimonial-slide-item">
+              <div class="testimonial-single-card">
+                <div class="testimonial-card-badge">
+                  <i class="fa-solid fa-quote-left"></i>
+                </div>
+                <div class="testimonial-rating">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                </div>
+                <blockquote class="testimonial-quote-text">
+                  “Partnering with MARS Structure Limited for our 5-katha plot development was the best decision. Complete transparency in legal approvals, adherence to RAJUK guidelines, and exceptional construction pacing without compromise.”
+                </blockquote>
+                <div class="testimonial-author-row">
+                  <div class="author-avatar-initials">FA</div>
+                  <div class="author-info">
+                    <h4 class="author-name">Engr. Farhana Ahmed</h4>
+                    <span class="author-role">Joint-Venture Landowner • Sector 12</span>
+                  </div>
+                  <div class="author-verified-tag ms-auto d-none d-sm-inline-flex">
+                    <i class="fa-solid fa-circle-check"></i>
+                    <span>Joint Venture Partner</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Slide 3 -->
+            <div class="testimonial-slide-item">
+              <div class="testimonial-single-card">
+                <div class="testimonial-card-badge">
+                  <i class="fa-solid fa-quote-left"></i>
+                </div>
+                <div class="testimonial-rating">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                </div>
+                <blockquote class="testimonial-quote-text">
+                  “In residential construction, engineering integrity is everything. The senior engineering team showed exemplary professionalism from foundation piling to finishing. Highly recommended for families seeking timeless quality.”
+                </blockquote>
+                <div class="testimonial-author-row">
+                  <div class="author-avatar-initials">MR</div>
+                  <div class="author-info">
+                    <h4 class="author-name">Brig. Gen. (Retd.) M. Rahman</h4>
+                    <span class="author-role">Resident Owner • Monowara (Sector 09)</span>
+                  </div>
+                  <div class="author-verified-tag ms-auto d-none d-sm-inline-flex">
+                    <i class="fa-solid fa-circle-check"></i>
+                    <span>Verified Owner</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Slide 4 -->
+            <div class="testimonial-slide-item">
+              <div class="testimonial-single-card">
+                <div class="testimonial-card-badge">
+                  <i class="fa-solid fa-quote-left"></i>
+                </div>
+                <div class="testimonial-rating">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                </div>
+                <blockquote class="testimonial-quote-text">
+                  “MARS Structure Limited stands apart for their uncompromising commitment to earthquake resistance, BUET-vetted structural precision, and meticulous exterior detailing. A benchmark development team in Jolshiri Smart City.”
+                </blockquote>
+                <div class="testimonial-author-row">
+                  <div class="author-avatar-initials">AH</div>
+                  <div class="author-info">
+                    <h4 class="author-name">Prof. Dr. Anwar Hossain</h4>
+                    <span class="author-role">Architectural Consultant & Investor • Jolshiri</span>
+                  </div>
+                  <div class="author-verified-tag ms-auto d-none d-sm-inline-flex">
+                    <i class="fa-solid fa-circle-check"></i>
+                    <span>Distinguished Investor</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- Right Arrow Navigation (Middle Right Outside of 12 Columns) -->
+        <button type="button" class="testimonial-arrow-btn next" id="testimonialNextBtn" aria-label="Next Testimonial">
+          <i class="fa-solid fa-chevron-right"></i>
+        </button>
+
+      </div>
+
+      <!-- Testimonial Pagination Dots Below -->
+      <div class="testimonial-dots-wrap d-flex justify-content-center mt-4">
+        <div class="testimonial-slider-dots" id="testimonialDots"></div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ========================================================================
+       10. Section 7: VIP Consultation & Inquiries CTA Banner (Light Gray Alternative)
+       ======================================================================== -->
+  <section id="contact" class="mars-cta-section">
+    <div class="container">
+      <div class="cta-box-wrapper">
+        <div class="row align-items-center gy-4">
+          
+          <div class="col-lg-7" data-aos="fade-right" data-aos-duration="800">
+            <span class="section-tag mb-2">Direct Development Desk</span>
+            <h2 class="section-heading-serif mb-3">Ready to Secure Your Luxury Residence?</h2>
+            <p class="cta-narrative-subtext mb-4">
+              Connect directly with our senior development engineers and property consultants for comprehensive architectural drawings, unit availability, and on-site private viewings.
+            </p>
+            <div class="d-flex flex-wrap gap-3">
+              <a href="tel:+8801844020600" class="mars-btn-primary">
+                <i class="fa-solid fa-phone"></i>
+                <span>Call +880 1844 020600</span>
+              </a>
+              <a href="mailto:info@marsstructureltd.com" class="mars-btn-outline">
+                <i class="fa-solid fa-envelope"></i>
+                <span>Email Official Desk</span>
+              </a>
+            </div>
+          </div>
+
+          <!-- Quick Consultation Request Form -->
+          <div class="col-lg-5" data-aos="fade-left" data-aos-delay="150" data-aos-duration="800">
+            <div class="cta-form-card shadow-sm">
+              <h4 class="fw-bold mb-3 text-dark" style="font-family: var(--font-serif);">Request Consultation</h4>
+              <form onsubmit="event.preventDefault(); alert('Thank you for your interest! A senior consultant will contact you shortly.');">
+                <div class="mb-3">
+                  <input type="text" class="form-control" placeholder="Full Name" required>
+                </div>
+                <div class="mb-3">
+                  <input type="tel" class="form-control" placeholder="Phone Number" required>
+                </div>
+                <div class="mb-3">
+                  <select class="form-select">
+                    <option value="bayt-al-noor">Inquiring about: Bayt-Al Noor (Sec 08)</option>
+                    <option value="nur-anu-oasis">Inquiring about: Nur-Anu Oasis (Sec 12)</option>
+                    <option value="monowara">Inquiring about: Monowara (Sec 09)</option>
+                    <option value="landowner">Landowner Joint-Venture Partnership</option>
+                  </select>
+                </div>
+                <button type="submit" class="mars-btn-primary w-100 justify-content-center">
+                  <span>Submit Inquiry</span>
+                </button>
+              </form>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================================
+       11. Section 8: Prestige Luxury Footer
+       ======================================================================== -->
+  <footer class="mars-footer">
+    <div class="container">
+      
+      <!-- Top Newsletter Row -->
+      <div class="row align-items-center mb-5 pb-4 border-bottom border-secondary border-opacity-25" data-aos="fade-up" data-aos-duration="700">
+        <div class="col-lg-6 mb-3 mb-lg-0">
+          <h4 class="text-white fw-bold mb-1" style="font-family: var(--font-serif);">Stay Updated on New Releases</h4>
+          <p class="text-white-50 mb-0">Receive executive project updates, floor plans, and VIP launch invitations.</p>
+        </div>
+        <div class="col-lg-6">
+          <form class="footer-newsletter-form" onsubmit="event.preventDefault(); alert('Subscribed to MARS newsletter!');">
+            <input type="email" class="footer-newsletter-input" placeholder="Enter your corporate or personal email..." required>
+            <button type="submit" class="footer-newsletter-btn" aria-label="Subscribe">
+              <i class="fa-solid fa-arrow-right"></i>
+            </button>
+          </form>
+        </div>
+      </div>
+
+      <!-- Main Footer Columns -->
+      <div class="row g-4">
+        
+        <!-- Col 1: Brand Info -->
+        <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+          <img src="assets/images/mars-logo.jpg" alt="MARS Logo" class="footer-brand-logo bg-white p-2 rounded">
+          <p class="text-white-50 mt-3 pe-lg-4">
+            MARS Structure Limited delivers innovative, sustainable, and earthquake-resilient architectural living solutions across Bangladesh.
+          </p>
+          <div class="d-flex gap-2 mt-3">
+            <a href="https://facebook.com" class="topbar-social-icon"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="https://instagram.com" class="topbar-social-icon"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://linkedin.com" class="topbar-social-icon"><i class="fa-brands fa-linkedin-in"></i></a>
+            <a href="https://youtube.com" class="topbar-social-icon"><i class="fa-brands fa-youtube"></i></a>
+          </div>
+        </div>
+
+        <!-- Col 2: Navigation Links -->
+        <div class="col-lg-2 col-md-6 col-6" data-aos="fade-up" data-aos-delay="200">
+          <h5 class="footer-col-title">Navigation</h5>
+          <ul class="footer-links-list">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="properties.html">Properties</a></li>
+            <li><a href="property-details.html">Property Details</a></li>
+            <li><a href="#locations">Locations & Map</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 3: Signature Projects Directory -->
+        <div class="col-lg-3 col-md-6 col-6" data-aos="fade-up" data-aos-delay="300">
+          <h5 class="footer-col-title">Signature Projects</h5>
+          <ul class="footer-links-list">
+            <li><a href="property-details.html">Bayt-Al Noor (Sec 08)</a></li>
+            <li><a href="property-details.html">Nur-Anu Oasis (Sec 12)</a></li>
+            <li><a href="property-details.html">Monowara (Sec 09)</a></li>
+            <li><a href="property-details.html">Shanti Nibash (Sec 13A)</a></li>
+            <li><a href="property-details.html">Bayat-Al Barakah (Sec 12)</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 4: Corporate Office -->
+        <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="400">
+          <h5 class="footer-col-title">Head Office</h5>
+          <p class="text-white-50 mb-2">
+            <i class="fa-solid fa-location-dot text-warning me-2"></i>
+            Plot: 005, Road: 409, Sector: 11, Jolshiri Abashon, Narayangonj
+          </p>
+          <p class="text-white-50 mb-2">
+            <i class="fa-solid fa-phone text-warning me-2"></i>
+            <a href="tel:+8801844020600" class="text-white">+880 1844 020600</a>
+          </p>
+          <p class="text-white-50 mb-0">
+            <i class="fa-solid fa-envelope text-warning me-2"></i>
+            <a href="mailto:info@marsstructureltd.com" class="text-white">info@marsstructureltd.com</a>
+          </p>
+        </div>
+
+      </div>
+
+      <!-- Copyright Bottom Bar -->
+      <div class="footer-bottom-bar d-flex flex-wrap justify-content-between align-items-center">
+        <p class="mb-0">© 2026 MARS Structure Limited. All rights reserved.</p>
+        <p class="mb-0 text-white-50">Designed and developed by MARS Structure Limited</p>
+      </div>
+
+    </div>
+  </footer>
+
+  <!-- ========================================================================
+       12. Off-Canvas Luxury Mobile Navigation Drawer
+       ======================================================================== -->
+  <div class="offcanvas offcanvas-end mars-mobile-drawer" tabindex="-1" id="marsMobileDrawer" aria-labelledby="marsMobileDrawerLabel">
+    <div class="mobile-drawer-header">
+      <img src="assets/images/mars-logo.jpg" alt="MARS Logo" class="mobile-drawer-logo">
+      <button type="button" class="mobile-drawer-close" data-bs-dismiss="offcanvas" aria-label="Close">
+        <i class="fa-solid fa-xmark"></i>
+      </button>
+    </div>
+
+    <div class="mobile-drawer-body">
+      <!-- Mobile Links List -->
+      <ul class="mobile-nav-list">
+        <li class="mobile-nav-item">
+          <a href="index.html" class="mobile-nav-link active">Home</a>
+        </li>
+        <li class="mobile-nav-item">
+          <a href="about.html" class="mobile-nav-link">About MARS</a>
+        </li>
+        <li class="mobile-nav-item">
+          <a href="properties.html" class="mobile-nav-link">Signature Properties</a>
+        </li>
+        <li class="mobile-nav-item">
+          <a href="property-details.html" class="mobile-nav-link">Property Details</a>
+        </li>
+        <li class="mobile-nav-item">
+          <a href="index.html#services" class="mobile-nav-link">Our Solutions</a>
+        </li>
+        <li class="mobile-nav-item">
+          <a href="index.html#locations" class="mobile-nav-link">Locations & Map</a>
+        </li>
+        <li class="mobile-nav-item">
+          <a href="contact.html" class="mobile-nav-link">Contact & Inquiries</a>
+        </li>
+      </ul>
+
+      <!-- Drawer Footer with Quick Hotline -->
+      <div class="mobile-drawer-footer">
+        <div class="mobile-hotline-card">
+          <div class="mobile-hotline-label">Direct Development Desk</div>
+          <a href="tel:+8801844020600" class="mobile-hotline-num">+880 1844 020600</a>
+        </div>
+        <a href="contact.html" class="mars-btn-primary w-100 text-center justify-content-center">
+          <span>Book a Consultation</span>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- ========================================================================
+       13. Floating Back to Top Button
+       ======================================================================== -->
+  <button type="button" id="marsBackToTop" class="mars-back-to-top" aria-label="Back to Top" title="Back to Top">
+    <i class="fa-solid fa-arrow-up"></i>
+  </button>
+
+  <!-- ========================================================================
+       14. Local Scripts (No CDN)
+       ======================================================================== -->
+  <!-- Local Bootstrap 5 Bundle JS -->
+  <script src="assets/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Local Leaflet Map JS (No CDN) -->
+  <script src="assets/js/leaflet.js"></script>
+
+  <!-- Local AOS (Animate On Scroll) JS (No CDN) -->
+  <script src="assets/js/aos.js"></script>
+
+  <!-- Custom Viewport & Full Page Controller Script -->
+  <script src="assets/js/main.js"></script>
+
+</body>
+</html>

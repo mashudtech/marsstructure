@@ -1,0 +1,512 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="referrer" content="no-referrer">
+
+  <title>Signature Properties & Landmark Portfolio | MARS Structure Limited</title>
+  <meta name="description" content="Explore all ongoing, upcoming, and completed single-unit luxury residential landmarks by MARS Structure Limited in Jolshiri Smart City. BUET-vetted engineering.">
+
+  <!-- Favicon -->
+  <link rel="shortcut icon" href="assets/images/mars-logo.jpg" type="image/x-icon">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@500;600;700&family=Playfair+Display:ital,wght@0,600..700;1,600&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Local Bootstrap 5 & Icons -->
+  <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+  <link rel="stylesheet" href="assets/css/fontawesome.min.css">
+  <link rel="stylesheet" href="assets/css/aos.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+  <!-- Topbar -->
+  <header class="mars-topbar">
+    <div class="container d-flex align-items-center justify-content-between">
+      <div class="topbar-left-area d-flex align-items-center gap-4">
+        <a href="tel:+8801844020600" class="topbar-contact-item">
+          <i class="fa-solid fa-phone-volume"></i>
+          <span>+880 1844 020600</span>
+        </a>
+        <a href="mailto:info@marsstructureltd.com" class="topbar-contact-item topbar-email-item">
+          <i class="fa-solid fa-envelope"></i>
+          <span>info@marsstructureltd.com</span>
+        </a>
+      </div>
+      <div class="topbar-right-area">
+        <div class="topbar-social-links">
+          <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" class="topbar-social-icon"><i class="fa-brands fa-facebook-f"></i></a>
+          <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" class="topbar-social-icon"><i class="fa-brands fa-instagram"></i></a>
+          <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="topbar-social-icon"><i class="fa-brands fa-linkedin-in"></i></a>
+          <a href="https://youtube.com" target="_blank" rel="noopener noreferrer" class="topbar-social-icon"><i class="fa-brands fa-youtube"></i></a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Navigation -->
+  <nav class="mars-main-header">
+    <div class="container d-flex align-items-center justify-content-between">
+      <a href="index.html" class="mars-brand-logo-link" title="MARS Structure Limited">
+        <img src="assets/images/mars-logo.jpg" alt="MARS Logo" class="mars-brand-logo-img">
+      </a>
+
+      <ul class="mars-nav-menu ms-auto d-none d-lg-flex">
+        <li class="mars-nav-item"><a href="index.html" class="mars-nav-link">Home</a></li>
+        <li class="mars-nav-item"><a href="about.html" class="mars-nav-link">About Us</a></li>
+        <li class="mars-nav-item">
+          <a href="properties.html" class="mars-nav-link active">Properties <i class="fa-solid fa-angle-down"></i></a>
+          <ul class="mars-dropdown-menu">
+            <li><a href="properties.html" class="text-gold">All Properties</a></li>
+            <li><a href="properties.html?filter=ongoing">Ongoing Construction <span class="drop-badge">Active</span></a></li>
+            <li><a href="properties.html?filter=upcoming">Upcoming Releases</a></li>
+            <li><a href="properties.html?filter=completed">Completed Landmarks</a></li>
+          </ul>
+        </li>
+        <li class="mars-nav-item"><a href="index.html#services" class="mars-nav-link">Solutions</a></li>
+        <li class="mars-nav-item"><a href="contact.html" class="mars-nav-link">Contact</a></li>
+      </ul>
+
+      <button class="mars-hamburger-btn d-lg-none ms-auto" type="button" data-bs-toggle="offcanvas" data-bs-target="#marsMobileDrawer">
+        <i class="fa-solid fa-bars-staggered"></i>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Banner -->
+  <section class="inner-hero-banner text-center">
+    <div class="container position-relative z-2" data-aos="fade-up">
+      <div class="inner-breadcrumb-nav">
+        <a href="index.html">Home</a>
+        <span>/</span>
+        <span class="text-white">Properties</span>
+      </div>
+      <h1 class="inner-banner-title">Portfolio of Excellence</h1>
+      <p class="inner-banner-sub">
+        Explore premier single-unit luxury residential developments crafted with BUET-vetted engineering across Jolshiri Smart City.
+      </p>
+    </div>
+  </section>
+
+  <!-- Filter Controls & Property Grid -->
+  <section class="py-5 bg-white">
+    <div class="container">
+      
+      <!-- Filter Bar -->
+      <div class="d-flex flex-wrap justify-content-between align-items-center gap-3 mb-4" data-aos="fade-up">
+        <!-- Status Tabs -->
+        <div class="project-filter-bar mb-0">
+          <button type="button" class="project-filter-btn active" data-filter="all">All (12)</button>
+          <button type="button" class="project-filter-btn" data-filter="ongoing">Ongoing (4)</button>
+          <button type="button" class="project-filter-btn" data-filter="upcoming">Upcoming (4)</button>
+          <button type="button" class="project-filter-btn" data-filter="completed">Completed (4)</button>
+        </div>
+
+        <!-- Sector & Search Dropdowns -->
+        <div class="d-flex flex-wrap align-items-center gap-2">
+          <select id="sectorSelect" class="form-select form-select-sm" style="width: auto;">
+            <option value="all">All Sectors</option>
+            <option value="sec-08">Sector 08</option>
+            <option value="sec-09">Sector 09</option>
+            <option value="sec-10">Sector 10</option>
+            <option value="sec-11">Sector 11</option>
+            <option value="sec-12">Sector 12</option>
+            <option value="sec-13a">Sector 13A</option>
+          </select>
+          <input type="text" id="propSearchInput" class="form-control form-control-sm" placeholder="Search property name..." style="width: 200px;">
+        </div>
+      </div>
+
+      <!-- Properties Grid (12 Items) -->
+      <div class="row g-4" id="propertiesCatalogGrid">
+        
+        <!-- ONGOING 1 -->
+        <div class="col-md-6 col-lg-4 prop-catalog-card" data-category="ongoing" data-sector="sec-08" data-aos="fade-up">
+          <div class="project-showcase-box">
+            <div class="project-img-frame">
+              <img src="assets/images/projects/bayt-al-noor.jpg" alt="Bayt-Al Noor">
+              <span class="project-status-tag status-ongoing">Ongoing</span>
+            </div>
+            <div class="project-info-body">
+              <h3 class="project-card-title">Bayt-Al Noor</h3>
+              <div class="project-card-address"><i class="fa-solid fa-location-dot"></i><span>Plot 004, Road 501, Sector 08, Jolshiri</span></div>
+              <p class="project-card-desc">Signature luxury single-unit residence engineered with 4-sided natural daylighting and BUET vetting.</p>
+              <div class="pt-2"><a href="property-details.html" class="mars-btn-primary w-100 justify-content-center"><span>View Project Details</span><i class="fa-solid fa-arrow-right"></i></a></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- ONGOING 2 -->
+        <div class="col-md-6 col-lg-4 prop-catalog-card" data-category="ongoing" data-sector="sec-12" data-aos="fade-up" data-aos-delay="100">
+          <div class="project-showcase-box">
+            <div class="project-img-frame">
+              <img src="assets/images/projects/nur-anu-oasis.jpg" alt="Nur-Anu Oasis">
+              <span class="project-status-tag status-ongoing">Ongoing</span>
+            </div>
+            <div class="project-info-body">
+              <h3 class="project-card-title">Nur-Anu Oasis</h3>
+              <div class="project-card-address"><i class="fa-solid fa-location-dot"></i><span>Plot 007, Road 409A, Sector 12, Jolshiri</span></div>
+              <p class="project-card-desc">Exclusive single-unit suites featuring premium European fittings and double-height entrance atrium.</p>
+              <div class="pt-2"><a href="property-details.html" class="mars-btn-primary w-100 justify-content-center"><span>View Project Details</span><i class="fa-solid fa-arrow-right"></i></a></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- ONGOING 3 -->
+        <div class="col-md-6 col-lg-4 prop-catalog-card" data-category="ongoing" data-sector="sec-09" data-aos="fade-up" data-aos-delay="200">
+          <div class="project-showcase-box">
+            <div class="project-img-frame">
+              <img src="assets/images/projects/monowara.jpg" alt="Monowara">
+              <span class="project-status-tag status-ongoing">Ongoing</span>
+            </div>
+            <div class="project-info-body">
+              <h3 class="project-card-title">Monowara</h3>
+              <div class="project-card-address"><i class="fa-solid fa-location-dot"></i><span>Plot 001, Road 303, Sector 09, Jolshiri</span></div>
+              <p class="project-card-desc">Contemporary residential masterpiece combining modern architecture with balanced family living.</p>
+              <div class="pt-2"><a href="property-details.html" class="mars-btn-primary w-100 justify-content-center"><span>View Project Details</span><i class="fa-solid fa-arrow-right"></i></a></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- ONGOING 4 -->
+        <div class="col-md-6 col-lg-4 prop-catalog-card" data-category="ongoing" data-sector="sec-10" data-aos="fade-up">
+          <div class="project-showcase-box">
+            <div class="project-img-frame">
+              <img src="assets/images/projects/about-img7.png" alt="MARS Zenith Tower">
+              <span class="project-status-tag status-ongoing">Ongoing</span>
+            </div>
+            <div class="project-info-body">
+              <h3 class="project-card-title">MARS Zenith Tower</h3>
+              <div class="project-card-address"><i class="fa-solid fa-location-dot"></i><span>Plot 019, Road 401, Sector 10, Jolshiri</span></div>
+              <p class="project-card-desc">Exclusive corner-plot luxury suites boasting panoramic boulevard views and BUET certified longevity.</p>
+              <div class="pt-2"><a href="property-details.html" class="mars-btn-primary w-100 justify-content-center"><span>View Project Details</span><i class="fa-solid fa-arrow-right"></i></a></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- UPCOMING 1 -->
+        <div class="col-md-6 col-lg-4 prop-catalog-card" data-category="upcoming" data-sector="sec-13a" data-aos="fade-up" data-aos-delay="100">
+          <div class="project-showcase-box">
+            <div class="project-img-frame">
+              <img src="assets/images/projects/shanti-nibash.jpg" alt="Shanti Nibash">
+              <span class="project-status-tag status-upcoming">Upcoming</span>
+            </div>
+            <div class="project-info-body">
+              <h3 class="project-card-title">Shanti Nibash</h3>
+              <div class="project-card-address"><i class="fa-solid fa-location-dot"></i><span>Plot 004, Road 502, Sector 13A, Jolshiri</span></div>
+              <p class="project-card-desc">Serene sanctuary residence offering maximum daylight, natural breeze, and calm community living.</p>
+              <div class="pt-2"><a href="property-details.html" class="mars-btn-primary w-100 justify-content-center"><span>View Project Details</span><i class="fa-solid fa-arrow-right"></i></a></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- UPCOMING 2 -->
+        <div class="col-md-6 col-lg-4 prop-catalog-card" data-category="upcoming" data-sector="sec-12" data-aos="fade-up" data-aos-delay="200">
+          <div class="project-showcase-box">
+            <div class="project-img-frame">
+              <img src="assets/images/projects/bayat-al-barakah.jpg" alt="Bayat-Al Barakah">
+              <span class="project-status-tag status-upcoming">Upcoming</span>
+            </div>
+            <div class="project-info-body">
+              <h3 class="project-card-title">Bayat-Al Barakah</h3>
+              <div class="project-card-address"><i class="fa-solid fa-location-dot"></i><span>Plot 026, Road 404, Sector 12, Jolshiri</span></div>
+              <p class="project-card-desc">Upcoming flagship development engineered for longevity, capital appreciation, and premier comfort.</p>
+              <div class="pt-2"><a href="property-details.html" class="mars-btn-primary w-100 justify-content-center"><span>View Project Details</span><i class="fa-solid fa-arrow-right"></i></a></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- UPCOMING 3 -->
+        <div class="col-md-6 col-lg-4 prop-catalog-card" data-category="upcoming" data-sector="sec-11" data-aos="fade-up">
+          <div class="project-showcase-box">
+            <div class="project-img-frame">
+              <img src="assets/images/projects/about-img7.png" alt="Jolshiri Royal Heights">
+              <span class="project-status-tag status-upcoming">Upcoming</span>
+            </div>
+            <div class="project-info-body">
+              <h3 class="project-card-title">Jolshiri Royal Heights</h3>
+              <div class="project-card-address"><i class="fa-solid fa-location-dot"></i><span>Plot 015, Road 402, Sector 11, Jolshiri</span></div>
+              <p class="project-card-desc">Architectural masterpiece designed for ultra-luxury living with panoramic green boulevard views.</p>
+              <div class="pt-2"><a href="property-details.html" class="mars-btn-primary w-100 justify-content-center"><span>View Project Details</span><i class="fa-solid fa-arrow-right"></i></a></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- UPCOMING 4 -->
+        <div class="col-md-6 col-lg-4 prop-catalog-card" data-category="upcoming" data-sector="sec-04" data-aos="fade-up" data-aos-delay="100">
+          <div class="project-showcase-box">
+            <div class="project-img-frame">
+              <img src="assets/images/projects/about-img8.png" alt="MARS Lakeview Crown">
+              <span class="project-status-tag status-upcoming">Upcoming</span>
+            </div>
+            <div class="project-info-body">
+              <h3 class="project-card-title">MARS Lakeview Crown</h3>
+              <div class="project-card-address"><i class="fa-solid fa-location-dot"></i><span>Plot 011, Road 202, Sector 04, Jolshiri</span></div>
+              <p class="project-card-desc">Lakeside luxury single units engineered for biophilic ventilation, natural serenity, and rapid ROI.</p>
+              <div class="pt-2"><a href="property-details.html" class="mars-btn-primary w-100 justify-content-center"><span>View Project Details</span><i class="fa-solid fa-arrow-right"></i></a></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- COMPLETED 1 -->
+        <div class="col-md-6 col-lg-4 prop-catalog-card" data-category="completed" data-sector="sec-03" data-aos="fade-up" data-aos-delay="200">
+          <div class="project-showcase-box">
+            <div class="project-img-frame">
+              <img src="assets/images/projects/about-img7.png" alt="MARS Valley">
+              <span class="project-status-tag status-completed">Completed</span>
+            </div>
+            <div class="project-info-body">
+              <h3 class="project-card-title">MARS Valley</h3>
+              <div class="project-card-address"><i class="fa-solid fa-location-dot"></i><span>Plot 008, Road 201, Sector 03, Jolshiri</span></div>
+              <p class="project-card-desc">Successfully handed over luxury residential landmark featuring BUET-certified structural longevity.</p>
+              <div class="pt-2"><a href="property-details.html" class="mars-btn-primary w-100 justify-content-center"><span>View Project Details</span><i class="fa-solid fa-arrow-right"></i></a></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- COMPLETED 2 -->
+        <div class="col-md-6 col-lg-4 prop-catalog-card" data-category="completed" data-sector="sec-07" data-aos="fade-up">
+          <div class="project-showcase-box">
+            <div class="project-img-frame">
+              <img src="assets/images/projects/about-img8.png" alt="MARS Heritage">
+              <span class="project-status-tag status-completed">Completed</span>
+            </div>
+            <div class="project-info-body">
+              <h3 class="project-card-title">MARS Heritage</h3>
+              <div class="project-card-address"><i class="fa-solid fa-location-dot"></i><span>Plot 012, Road 302, Sector 07, Jolshiri</span></div>
+              <p class="project-card-desc">Delivered landmark residential tower celebrated for timeless exterior design and premium community living.</p>
+              <div class="pt-2"><a href="property-details.html" class="mars-btn-primary w-100 justify-content-center"><span>View Project Details</span><i class="fa-solid fa-arrow-right"></i></a></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- COMPLETED 3 -->
+        <div class="col-md-6 col-lg-4 prop-catalog-card" data-category="completed" data-sector="sec-11" data-aos="fade-up" data-aos-delay="100">
+          <div class="project-showcase-box">
+            <div class="project-img-frame">
+              <img src="assets/images/projects/hero-bg.jpg" alt="MARS Residency">
+              <span class="project-status-tag status-completed">Completed</span>
+            </div>
+            <div class="project-info-body">
+              <h3 class="project-card-title">MARS Residency</h3>
+              <div class="project-card-address"><i class="fa-solid fa-location-dot"></i><span>Plot 005, Road 409, Sector 11, Jolshiri</span></div>
+              <p class="project-card-desc">Flagship delivered property showcasing modern architectural aesthetics and earthquake-safe engineering.</p>
+              <div class="pt-2"><a href="property-details.html" class="mars-btn-primary w-100 justify-content-center"><span>View Project Details</span><i class="fa-solid fa-arrow-right"></i></a></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- COMPLETED 4 -->
+        <div class="col-md-6 col-lg-4 prop-catalog-card" data-category="completed" data-sector="sec-02" data-aos="fade-up" data-aos-delay="200">
+          <div class="project-showcase-box">
+            <div class="project-img-frame">
+              <img src="assets/images/projects/bayt-al-noor.jpg" alt="MARS Pavilion">
+              <span class="project-status-tag status-completed">Completed</span>
+            </div>
+            <div class="project-info-body">
+              <h3 class="project-card-title">MARS Pavilion</h3>
+              <div class="project-card-address"><i class="fa-solid fa-location-dot"></i><span>Plot 003, Road 101, Sector 02, Jolshiri</span></div>
+              <p class="project-card-desc">Successfully handed over single-unit landmark celebrated for superior finishings and resident satisfaction.</p>
+              <div class="pt-2"><a href="property-details.html" class="mars-btn-primary w-100 justify-content-center"><span>View Project Details</span><i class="fa-solid fa-arrow-right"></i></a></div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- CTA Banner -->
+  <section class="py-5 bg-dark text-white border-top border-secondary border-opacity-25" data-aos="fade-up">
+    <div class="container text-center py-4">
+      <span class="badge bg-gold text-dark px-3 py-2 text-uppercase fw-bold mb-3">Direct Property Inquiries</span>
+      <h2 class="font-serif-luxury fs-1 fw-bold text-white mb-3">Schedule a Private Site Tour in Jolshiri</h2>
+      <p class="text-white-50 max-w-700 mx-auto mb-4">
+        Our engineers and client managers host private on-site viewings for all ongoing and completed projects with official drawings and floor layouts.
+      </p>
+      <div class="d-flex flex-wrap justify-content-center gap-3">
+        <a href="contact.html" class="mars-btn-primary">
+          <span>Book Site Inspection</span>
+          <i class="fa-solid fa-calendar-check"></i>
+        </a>
+        <a href="tel:+8801844020600" class="mars-btn-outline btn-outline-white">
+          <i class="fa-solid fa-phone"></i>
+          <span>Call +880 1844 020600</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="mars-footer">
+    <div class="container">
+      <div class="row align-items-center mb-5 pb-4 border-bottom border-secondary border-opacity-25">
+        <div class="col-lg-6 mb-3 mb-lg-0">
+          <h4 class="text-white fw-bold mb-1" style="font-family: var(--font-serif);">Stay Updated on New Releases</h4>
+          <p class="text-white-50 mb-0">Receive executive project updates, floor plans, and VIP launch invitations.</p>
+        </div>
+        <div class="col-lg-6">
+          <form class="footer-newsletter-form" onsubmit="event.preventDefault(); alert('Subscribed to MARS newsletter!');">
+            <input type="email" class="footer-newsletter-input" placeholder="Enter your corporate or personal email..." required>
+            <button type="submit" class="footer-newsletter-btn" aria-label="Subscribe"><i class="fa-solid fa-arrow-right"></i></button>
+          </form>
+        </div>
+      </div>
+
+      <div class="row g-4">
+        <div class="col-lg-4 col-md-6">
+          <img src="assets/images/mars-logo.jpg" alt="MARS Logo" class="footer-brand-logo bg-white p-2 rounded">
+          <p class="text-white-50 mt-3 pe-lg-4">
+            MARS Structure Limited delivers innovative, sustainable, and earthquake-resilient architectural living solutions across Bangladesh.
+          </p>
+          <div class="d-flex gap-2 mt-3">
+            <a href="https://facebook.com" class="topbar-social-icon"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="https://instagram.com" class="topbar-social-icon"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://linkedin.com" class="topbar-social-icon"><i class="fa-brands fa-linkedin-in"></i></a>
+            <a href="https://youtube.com" class="topbar-social-icon"><i class="fa-brands fa-youtube"></i></a>
+          </div>
+        </div>
+
+        <div class="col-lg-2 col-md-6 col-6">
+          <h5 class="footer-col-title">Navigation</h5>
+          <ul class="footer-links-list">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="properties.html">Properties</a></li>
+            <li><a href="property-details.html">Property Details</a></li>
+            <li><a href="index.html#locations">Locations & Map</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+          </ul>
+        </div>
+
+        <div class="col-lg-3 col-md-6 col-6">
+          <h5 class="footer-col-title">Signature Projects</h5>
+          <ul class="footer-links-list">
+            <li><a href="property-details.html">Bayt-Al Noor (Sec 08)</a></li>
+            <li><a href="property-details.html">Nur-Anu Oasis (Sec 12)</a></li>
+            <li><a href="property-details.html">Monowara (Sec 09)</a></li>
+            <li><a href="property-details.html">Shanti Nibash (Sec 13A)</a></li>
+            <li><a href="property-details.html">Bayat-Al Barakah (Sec 12)</a></li>
+          </ul>
+        </div>
+
+        <div class="col-lg-3 col-md-6">
+          <h5 class="footer-col-title">Head Office</h5>
+          <p class="text-white-50 mb-2"><i class="fa-solid fa-location-dot text-warning me-2"></i> Plot: 005, Road: 409, Sector: 11, Jolshiri Abashon, Narayangonj</p>
+          <p class="text-white-50 mb-2"><i class="fa-solid fa-phone text-warning me-2"></i> <a href="tel:+8801844020600" class="text-white">+880 1844 020600</a></p>
+          <p class="text-white-50 mb-0"><i class="fa-solid fa-envelope text-warning me-2"></i> <a href="mailto:info@marsstructureltd.com" class="text-white">info@marsstructureltd.com</a></p>
+        </div>
+      </div>
+
+      <div class="footer-bottom-bar d-flex flex-wrap justify-content-between align-items-center">
+        <p class="mb-0">© 2026 MARS Structure Limited. All rights reserved.</p>
+        <p class="mb-0 text-white-50">Designed and developed by MARS Structure Limited</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Offcanvas Mobile Drawer -->
+  <div class="offcanvas offcanvas-end mars-mobile-drawer" tabindex="-1" id="marsMobileDrawer">
+    <div class="mobile-drawer-header">
+      <img src="assets/images/mars-logo.jpg" alt="MARS Logo" class="mobile-drawer-logo">
+      <button type="button" class="mobile-drawer-close" data-bs-dismiss="offcanvas">&times;</button>
+    </div>
+    <div class="mobile-drawer-body">
+      <ul class="mobile-nav-list">
+        <li class="mobile-nav-item"><a href="index.html" class="mobile-nav-link">Home</a></li>
+        <li class="mobile-nav-item"><a href="about.html" class="mobile-nav-link">About MARS</a></li>
+        <li class="mobile-nav-item"><a href="properties.html" class="mobile-nav-link active">Signature Properties</a></li>
+        <li class="mobile-nav-item"><a href="index.html#services" class="mobile-nav-link">Our Solutions</a></li>
+        <li class="mobile-nav-item"><a href="index.html#locations" class="mobile-nav-link">Locations & Map</a></li>
+        <li class="mobile-nav-item"><a href="contact.html" class="mobile-nav-link">Contact & Inquiries</a></li>
+      </ul>
+      <div class="mobile-drawer-footer">
+        <a href="tel:+8801844020600" class="mars-btn-primary w-100 justify-content-center">
+          <i class="fa-solid fa-phone me-1"></i> Call Development Desk
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Scripts -->
+  <script src="assets/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/js/aos.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      if (typeof AOS !== 'undefined') {
+        AOS.init({ duration: 800, easing: 'ease-out-cubic', once: true, offset: 50 });
+      }
+
+      // Catalog Filtering Script
+      const filterBtns = document.querySelectorAll('.project-filter-btn');
+      const cards = document.querySelectorAll('.prop-catalog-card');
+      const sectorSelect = document.getElementById('sectorSelect');
+      const searchInput = document.getElementById('propSearchInput');
+
+      let currentStatus = 'all';
+      let currentSector = 'all';
+      let currentQuery = '';
+
+      // Check URL query parameters (e.g. ?filter=ongoing)
+      const urlParams = new URLSearchParams(window.location.search);
+      const initialStatusParam = urlParams.get('filter');
+      if (initialStatusParam) {
+        currentStatus = initialStatusParam;
+        filterBtns.forEach(btn => {
+          if (btn.getAttribute('data-filter') === currentStatus) btn.classList.add('active');
+          else btn.classList.remove('active');
+        });
+      }
+
+      function filterCatalog() {
+        cards.forEach(card => {
+          const category = card.getAttribute('data-category');
+          const sector = card.getAttribute('data-sector');
+          const title = card.querySelector('.project-card-title').textContent.toLowerCase();
+
+          const matchesStatus = (currentStatus === 'all' || category === currentStatus);
+          const matchesSector = (currentSector === 'all' || sector === currentSector);
+          const matchesSearch = (!currentQuery || title.includes(currentQuery));
+
+          if (matchesStatus && matchesSector && matchesSearch) {
+            card.style.display = 'block';
+          } else {
+            card.style.display = 'none';
+          }
+        });
+      }
+
+      filterBtns.forEach(btn => {
+        btn.addEventListener('click', function() {
+          filterBtns.forEach(b => b.classList.remove('active'));
+          this.classList.add('active');
+          currentStatus = this.getAttribute('data-filter');
+          filterCatalog();
+        });
+      });
+
+      if (sectorSelect) {
+        sectorSelect.addEventListener('change', function() {
+          currentSector = this.value;
+          filterCatalog();
+        });
+      }
+
+      if (searchInput) {
+        searchInput.addEventListener('input', function() {
+          currentQuery = this.value.toLowerCase().trim();
+          filterCatalog();
+        });
+      }
+
+      filterCatalog();
+    });
+  </script>
+</body>
+</html>
